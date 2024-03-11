@@ -12,7 +12,6 @@ namespace UDPServer
             MainAsync(args).GetAwaiter().GetResult();
         }
 
-
         static async Task MainAsync(string[] args)
         {
             int port;
