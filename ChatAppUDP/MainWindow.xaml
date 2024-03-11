@@ -1,0 +1,29 @@
+﻿<Window x:Class="ChatAppUDP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChatAppUDP"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="600">
+    <Grid>
+
+        <ListBox x:Name="ChatListBox" Foreground="AntiqueWhite" FontSize="18" FontWeight="DemiBold">
+            <ListBox.Background>
+                <ImageBrush ImageSource="/chatBackground.jpg" Stretch="UniformToFill"/>
+            </ListBox.Background>
+
+        </ListBox>
+
+        <StackPanel Name="Stackpanel" Background="#FF665579" Margin="179,37,198,73">
+            <TextBlock Text="Enter IP-address:" Margin="0,15,0,0" FontWeight="Bold" FontSize="15" Width="127"/>
+            <TextBox Name="IpTextBox" Width="200" Margin="0, 15" Height="28"/>
+            <TextBlock Text="Enter port:" Margin="0,15,0,15" FontWeight="Bold" FontSize="15" Width="86"/>
+            <TextBox Name="PortTextBox" Width="200" Margin="0, 15" Height="27"/>
+            <Button Content="Connect" Margin="0,15" Click="ConnectButton_Click" Width="156" Height="38" FontWeight="Bold" FontSize="17" Background="#FF6BF48F"/>
+        </StackPanel>
+
+        <TextBox x:Name="MessageTextBox" VerticalAlignment="Bottom" Margin="0,0,5,5" Height="41"/>
+        <Button Content="Send" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="SendMessage_Click" Margin="0,0,5,5" Height="41" Width="72" Background="#FF13B4A4" FontWeight="Bold" FontSize="16"/>
+    </Grid>
+</Window>

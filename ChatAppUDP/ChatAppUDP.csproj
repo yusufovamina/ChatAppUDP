@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="chatBackground.jpg" />
+    <None Remove="Снимок экрана 2024-03-11 220140.png" />
+    <None Remove="Снимок экрана 2024-03-11 220201.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.27" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="chatBackground.jpg" />
+    <Resource Include="Снимок экрана 2024-03-11 220140.png" />
+    <Resource Include="Снимок экрана 2024-03-11 220201.png" />
+  </ItemGroup>
+
+</Project>
